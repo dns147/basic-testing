@@ -1,3 +1,12 @@
+### Done: 12.02.2024
+### Deadline: 13.02.2024
+### Score: 258 / 258
+
+### P.S. If you have question ask me. Discord: dns147
+
+
+
+
 # Basic testing
 
 ⚠️ DO NOT SUBMIT PULL REQUESTS TO THIS REPO ⚠️
