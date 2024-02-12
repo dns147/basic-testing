@@ -19,7 +19,9 @@ describe('simpleCalculator tests', () => {
   });
 
   test('should exponentiate two numbers', () => {
-    expect(simpleCalculator({ a: 5, b: 2, action: Action.Exponentiate })).toBe(25);
+    expect(simpleCalculator({ a: 5, b: 2, action: Action.Exponentiate })).toBe(
+      25,
+    );
   });
 
   test('should return null for invalid action', () => {

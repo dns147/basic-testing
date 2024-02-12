@@ -8,8 +8,8 @@ jest.mock('lodash', () => ({
 }));
 
 const users = [
-  { id: 1, name: "John" },
-  { id: 2, name: "Andrew" },
+  { id: 1, name: 'John' },
+  { id: 2, name: 'Andrew' },
 ];
 
 jest.mock('axios', () => {
@@ -36,7 +36,7 @@ describe('throttledGetDataFromApi', () => {
   test('should perform request to correct provided url', async () => {
     const spy = jest.spyOn(axios, 'get');
     const path = '/';
-  
+
     await throttledGetDataFromApi(path);
     await expect(spy).toHaveBeenCalledTimes(0);
   });
@@ -45,6 +45,6 @@ describe('throttledGetDataFromApi', () => {
     const path = '/';
     const response = await throttledGetDataFromApi(path);
 
-    expect(response).toEqual(users);    
+    expect(response).toEqual(users);
   });
 });
